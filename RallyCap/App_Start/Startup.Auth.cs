@@ -54,16 +54,23 @@ namespace RallyCap
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
             //   consumerSecret: "");
-
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
-
+            
+            var options = new Microsoft.Owin.Security.Facebook.FacebookAuthenticationOptions()
+            {
+                AppId = "1077021485712804",
+                AppSecret = "29a866df2cceec36069c5c2193a07315",
+                CallbackPath = new PathString("/Account/RegisterExternalLogin")
+            };
+            options.Scope.Add("user_location");
+            app.UseFacebookAuthentication(options);
+            
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+
+
         }
     }
 }
