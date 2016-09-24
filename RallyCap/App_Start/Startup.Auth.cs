@@ -56,16 +56,17 @@ namespace RallyCap
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
+           /* app.UseFacebookAuthentication(
                    appId: "1077021485712804",
                    appSecret: "29a866df2cceec36069c5c2193a07315");
-
-            //var options = new FacebookAuthenticationOptions
-            //{
-            //    AppId = "1077021485712804",
-            //    AppSecret = "29a866df2cceec36069c5c2193a07315",
-            //    CallbackPath = new PathString("/oauth-redirect/facebook")
-            //};
+                   */
+            var options = new FacebookAuthenticationOptions
+            {
+                AppId = "1077021485712804",
+              AppSecret = "29a866df2cceec36069c5c2193a07315",
+              CallbackPath = new PathString("/oauth-redirect/facebook")
+            };
+            app.UseFacebookAuthentication(options);
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

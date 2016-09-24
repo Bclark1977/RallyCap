@@ -600,6 +600,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Images\" />
     <Folder Include="Journeys\Taunts\" />
     <Folder Include="Scripts\noty\" />
   </ItemGroup>
