@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <script type="text/javascript">
@@ -24,6 +24,7 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
+
 </head>
 <body>
     <form runat="server">
@@ -48,6 +49,15 @@
             </Scripts>
         </asp:ScriptManager>
 
+                <!-- Import the noty scripts -->
+        <script src="/Scripts/noty/jquery.noty.js"></script>
+        <script src="/Scripts/noty/layouts/top.js"></script>
+        <script src="/Scripts/noty/themes/default.js"></script>
+
+        <!-- Import the SignalR scripts -->
+        <script src="/Scripts/jquery.signalR-2.2.1.js"></script>
+        <script src="/signalr/hubs"></script>
+      
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
