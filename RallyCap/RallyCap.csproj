@@ -318,6 +318,8 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\bc_place.jpg" />
+    <Content Include="Content\images\WC_Logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Events\EventAdd.aspx" />
     <Content Include="Events\EventManage.aspx" />
