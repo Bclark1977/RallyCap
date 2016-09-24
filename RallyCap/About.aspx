@@ -5,5 +5,11 @@
     <h3>Your application description page.</h3>
     <p>Use this area to provide additional information.</p>
 
-    test
+    Here is a sample list of games:<br />
+
+    comboBox1.ValueMember = "Key";
+comboBox1.DisplayMember = "Value";
+
+comboBox1.Items.Add(new KeyValuePair<int, string>(102454, "Item1"));
+
 </asp:Content>

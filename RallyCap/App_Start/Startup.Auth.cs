@@ -56,32 +56,22 @@ namespace RallyCap
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //       appId: "1077021485712804",
-            //       appSecret: "29a866df2cceec36069c5c2193a07315");
+            app.UseFacebookAuthentication(
+                   appId: "1077021485712804",
+                   appSecret: "29a866df2cceec36069c5c2193a07315");
 
             //var options = new FacebookAuthenticationOptions
             //{
             //    AppId = "1077021485712804",
             //    AppSecret = "29a866df2cceec36069c5c2193a07315",
-            //    //CallbackPath = new PathString("/oauth-redirect/facebook")
+            //    CallbackPath = new PathString("/oauth-redirect/facebook")
             //};
 
-            //app.UseFacebookAuthentication(options);
-
-            var options = new FacebookAuthenticationOptions
-            {
-                AppId = "1077021485712804",
-                AppSecret = "29a866df2cceec36069c5c2193a07315",
-            };
-            options.Scope.Add("user_location");
-            app.UseFacebookAuthentication(options);
-
-            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            {
-                ClientId = "569145733702-oku18jjsmlgvlkcqllf0r0fo5niass61.apps.googleusercontent.com",
-                ClientSecret = "R38yaqxMEAxKV7dv2zq4z43G"
-            });
+            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            //{
+            //    ClientId = "569145733702-oku18jjsmlgvlkcqllf0r0fo5niass61.apps.googleusercontent.com",
+            //    ClientSecret = "R38yaqxMEAxKV7dv2zq4z43G"
+            //});
 
 
         }
