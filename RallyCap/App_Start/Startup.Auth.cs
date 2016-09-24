@@ -8,6 +8,7 @@ using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using RallyCap.Models;
+using Microsoft.Owin.Security.Facebook;
 
 namespace RallyCap
 {
@@ -54,21 +55,33 @@ namespace RallyCap
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
             //   consumerSecret: "");
-            
-            var options = new Microsoft.Owin.Security.Facebook.FacebookAuthenticationOptions()
+
+            //app.UseFacebookAuthentication(
+            //       appId: "1077021485712804",
+            //       appSecret: "29a866df2cceec36069c5c2193a07315");
+
+            //var options = new FacebookAuthenticationOptions
+            //{
+            //    AppId = "1077021485712804",
+            //    AppSecret = "29a866df2cceec36069c5c2193a07315",
+            //    //CallbackPath = new PathString("/oauth-redirect/facebook")
+            //};
+
+            //app.UseFacebookAuthentication(options);
+
+            var options = new FacebookAuthenticationOptions
             {
                 AppId = "1077021485712804",
                 AppSecret = "29a866df2cceec36069c5c2193a07315",
-                CallbackPath = new PathString("/Account/RegisterExternalLogin")
             };
             options.Scope.Add("user_location");
             app.UseFacebookAuthentication(options);
-            
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "569145733702-oku18jjsmlgvlkcqllf0r0fo5niass61.apps.googleusercontent.com",
+                ClientSecret = "R38yaqxMEAxKV7dv2zq4z43G"
+            });
 
 
         }
