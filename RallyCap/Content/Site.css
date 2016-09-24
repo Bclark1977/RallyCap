@@ -9,21 +9,13 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+    min-height: 300px;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="select"] {
+input,
+select,
+textarea {
     max-width: 280px;
 }
 
@@ -32,7 +24,14 @@ input[type="select"] {
     .jumbotron {
         margin-top: 20px;
     }
+
     .body-content {
         padding: 0;
     }
 }
+
+       *, *::before, *::after { box-sizing: content-box; }
+
+        @media (min-width: 1300px) {
+            .container { max-width: 95%; }
+        }
