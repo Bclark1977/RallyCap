@@ -5,17 +5,18 @@
         function ToggleSeatSelection(onOrOff) {
             alert(onOrOff);
             var item = document.getElementById("divSeatSelection");
-            
+
             item.style.display = onOrOff == "InPerson" ? "block" : "none";
         }
 
     </script>
     <div>
         <asp:Label runat="server" AssociatedControlID="lstEventType" CssClass="col-md-2 control-label">Game Date</asp:Label>
-        <asp:Calendar runat="server" id="txtCalendar" ></asp:Calendar>
+        <input type="date" id="txtDate" />
     </div>
+    <br />
     <div>
-        
+
         <asp:Label runat="server" AssociatedControlID="lstEventType" CssClass="col-md-2 control-label">Game Type</asp:Label>
         <div class="input">
             <asp:ListBox runat="server" ID="lstEventType" Rows="1" SelectionMode="Single">
@@ -45,9 +46,10 @@
         <asp:Label runat="server" AssociatedControlID="lstCity" CssClass="col-md-2 control-label">Attending</asp:Label>
 
         <div class="input">
-            <asp:ListBox runat="server" ID="lstAttendeeType" Rows="1" SelectionMode="Single"  onchange="ToggleSeatSelection(this.value)">
-                <asp:ListItem Text="Remote" value="Remote" />
-                <asp:ListItem Text="In Person" value="InPerson" />                
+            <asp:ListBox runat="server" ID="lstAttendeeType" Rows="1" SelectionMode="Single" onchange="ToggleSeatSelection(this.value)">
+                <asp:ListItem Text="Home" Value="Home" />
+                <asp:ListItem Text="Home" Value="Bar" />
+                <asp:ListItem Text="In Person" Value="InPerson" />
             </asp:ListBox>
         </div>
     </div>
@@ -76,5 +78,16 @@
         </div>
 
     </div>
+    <br />
+    <div>
+        <asp:Label runat="server" AssociatedControlID="radCanucks" CssClass="col-md-2 control-label">Favorite Team</asp:Label>
 
+        <div class="Input" >
+            <asp:RadioButton runat="server" ID="radCanucks" GroupName="FavoriteTeam" Text="Canucks" />
+            <asp:RadioButton runat="server" ID="radFlames" GroupName="FavoriteTeam" Text="Flames" />
+
+
+        </div>
+
+    </div>
 </asp:Content>

@@ -13,15 +13,6 @@ namespace RallyCap.Events {
     public partial class EventAdd {
         
         /// <summary>
-        /// txtCalendar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar txtCalendar;
-        
-        /// <summary>
         /// lstEventType control.
         /// </summary>
         /// <remarks>
@@ -74,5 +65,23 @@ namespace RallyCap.Events {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSeat;
+        
+        /// <summary>
+        /// radCanucks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radCanucks;
+        
+        /// <summary>
+        /// radFlames control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radFlames;
     }
 }
