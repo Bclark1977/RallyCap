@@ -17,7 +17,6 @@ body {
 .dl-horizontal dt {
     white-space: normal;
 }
-
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input[type="text"],
 input[type="password"],
@@ -31,7 +30,11 @@ input[type="select"] {
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
+        background-image: url("https://localhost:44338/Content/images/BC_Place.jpg")
+        max-width: 100%;
+        color: white;
     }
+    
     .body-content {
         padding: 0;
     }
