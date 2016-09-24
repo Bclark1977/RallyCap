@@ -327,6 +327,10 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\default.aspx" />
+    <Content Include="App_Data\aspnet-RallyCap-20160923102311.mdf" />
+    <Content Include="App_Data\aspnet-RallyCap-20160923102311_log.ldf">
+      <DependentUpon>aspnet-RallyCap-20160923102311.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -598,7 +602,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Images\" />
     <Folder Include="Journeys\Taunts\" />
