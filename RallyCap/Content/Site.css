@@ -29,11 +29,11 @@ input[type="select"] {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
-        margin-top: 20px;
+        margin-top: 60px;
         background-image: url("https://localhost:44338/Content/images/BC_Place.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
-        color: lightgrey;
+        color: darkblue;
     }
     
     .body-content {

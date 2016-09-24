@@ -4125,6 +4125,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
+    padding-top: 18px;
     padding-bottom: 0;
     overflow: visible !important;
   }
@@ -4933,8 +4934,8 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
   background-color: #eeeeee;
+
 }
 
 .jumbotron h1 {

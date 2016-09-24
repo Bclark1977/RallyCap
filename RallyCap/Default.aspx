@@ -6,7 +6,7 @@
         <h1><img src="https://localhost:44338/Content/images/WC_logo.png" width="100"/>
         Rally Cap</h1>
         <p class="lead">Marketing boys to add write up</p>
-        <p><a href="https://localhost:44338/Account/Register" class="btn btn-primary btn-lg">Register Now! &raquo;</a></p>
+        <p><a href="https://localhost:44338/Account/Login" class="btn btn-primary btn-lg">Login Now! &raquo;</a></p>
     </div>
 
     <div class="row">
