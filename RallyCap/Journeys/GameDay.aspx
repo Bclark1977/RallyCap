@@ -40,13 +40,13 @@
         
         
             if (content.includes("CountDown")) {
-                $.noty.closeAll();
+            //    $.noty.closeAll();
                 var seconds = content.split("||")[1];
              
                 showMessageAtTopOfScreen("Game Starts in " + seconds + " seconds")
             }
             if (content.includes("Taunt")) {
-                $.noty.closeAll();
+              //  $.noty.closeAll();
                 $(".Taunt").each(function () {
 
 
