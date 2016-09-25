@@ -19,15 +19,17 @@
             Air Ball!
         </div>
     </div>
-        <div id="PlayChant1" class="Chant" style="display:none">
-        Ohi ohi ohi.
-            <img src="/Content/images/SoccerChant1.jpg" />
+        <div id="PlayChant1" class="Chant" style="display:none; text-transform: uppercase;">
+       
+            <img src="/Content/images/SoccerChant1.jpg" /> <br />
+           We're Blue! <br />
+           We're White<br />
+            We're Fricken Dynamite<br />
+            White Caps! White Caps!<br />
     </div>
             <div id="PlayChant2" class="Chant" style="display:none">
          <iframe width="708" height="425" src="https://www.youtube.com/embed/FuwhlqXL0os" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div>
-        <iframe width="100%" height="100%" src="/Journeys/Soccer/Kickball web.html"  frameborder="0" allowfullscreen />
-    </div>
+
 </asp:Content>
