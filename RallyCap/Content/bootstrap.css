@@ -409,6 +409,7 @@ p {
   font-size: 16.099999999999998px;
   font-weight: 200;
   line-height: 1.4;
+  color: darkblue;
 }
 
 @media (min-width: 768px) {
@@ -4929,7 +4930,7 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
+  padding-top: 30px;
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
@@ -4940,7 +4941,7 @@ a.list-group-item.active > .badge,
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: darkblue;
 }
 
 .jumbotron p {
@@ -4949,6 +4950,11 @@ a.list-group-item.active > .badge,
 
 .container .jumbotron {
   border-radius: 6px;
+  padding-top: 20px;
+  padding-left: 20px;
+        background-image: url("https://localhost:44338/Content/images/BC_Place.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
 }
 
 @media screen and (min-width: 768px) {
