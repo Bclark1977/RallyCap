@@ -354,7 +354,6 @@
     <Content Include="Events\Web.config" />
     <Content Include="Journeys\Soccer\kickball web.unity3d" />
     <None Include="Properties\PublishProfiles\RallyCap.pubxml" />
-    <None Include="Properties\PublishProfiles\WhiteCap %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\WhiteCap.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -363,6 +362,21 @@
     <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\Notifications.js" />
+    <Content Include="Scripts\noty\jquery.noty.js" />
+    <Content Include="Scripts\noty\layouts\bottom.js" />
+    <Content Include="Scripts\noty\layouts\bottomCenter.js" />
+    <Content Include="Scripts\noty\layouts\bottomLeft.js" />
+    <Content Include="Scripts\noty\layouts\bottomRight.js" />
+    <Content Include="Scripts\noty\layouts\center.js" />
+    <Content Include="Scripts\noty\layouts\centerLeft.js" />
+    <Content Include="Scripts\noty\layouts\centerRight.js" />
+    <Content Include="Scripts\noty\layouts\inline.js" />
+    <Content Include="Scripts\noty\layouts\top.js" />
+    <Content Include="Scripts\noty\layouts\topCenter.js" />
+    <Content Include="Scripts\noty\layouts\topLeft.js" />
+    <Content Include="Scripts\noty\layouts\topRight.js" />
+    <Content Include="Scripts\noty\promise.js" />
+    <Content Include="Scripts\noty\themes\default.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
@@ -622,7 +636,6 @@
     <Folder Include="Images\" />
     <Folder Include="Journeys\Taunts\" />
     <Folder Include="MiniGames\" />
-    <Folder Include="Scripts\noty\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
