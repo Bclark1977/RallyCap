@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace RallyCap.Journeys
 {
-    public partial class Fanzone : System.Web.UI.Page
+    public partial class GameDay : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -32,6 +32,9 @@ function ShowContent(content) {
     if (content.includes("CountDown")) {
         var seconds = content.split("||")[1];
         window.status = seconds;
+        if ((seconds < 180) && (!window.location.includes("Journeys")) {
+            window.location = "/Journeys/Fanzone";
+        }
         var minutes = parseInt(seconds / 60)
         seconds = seconds - (minutes * 60);
         seconds = ("0" + seconds);

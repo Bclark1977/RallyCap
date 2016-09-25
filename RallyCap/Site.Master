@@ -102,7 +102,13 @@
                 <p>&copy; <%: DateTime.Now.Year %> - RallyCap</p>
             </footer>
         </div>
-                <script type="text/javascript" src="/Scripts/Notifications.js" />
+        <%
+            if (Page.User.Identity.IsAuthenticated)
+            {
+             %>
+        <script type="text/javascript" src="/Scripts/Notifications.js" />
+        <%
+            } %>
     </form>
 </body>
 </html>
