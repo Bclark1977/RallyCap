@@ -632,6 +632,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\Backup\" />
     <Folder Include="Controllers\" />
     <Folder Include="Images\" />
     <Folder Include="Journeys\Taunts\" />
