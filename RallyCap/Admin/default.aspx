@@ -48,7 +48,7 @@
     </div>
         <div style="margin-top: 100px;">
         <select name="lstChant" id="lstChant">
-            <option value="1">Ohi Ohi Ohi</option>
+            <option value="1">We are Blue</option>
             <option value="2">Glory Glory Revolution</option>
         </select>
         <input type="button" id="chantButton" value="Send Chant" />

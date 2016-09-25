@@ -19,7 +19,7 @@
             Air Ball!
         </div>
     </div>
-        <div id="PlayChant1" class="Chant" style="display:none; text-transform: uppercase;">
+        <div id="PlayChant1" class="Chant" style="display:none; text-align:center; font-size:24px; text-transform: uppercase;">
        
             <img src="/Content/images/SoccerChant1.jpg" /> <br />
            We're Blue! <br />
