@@ -355,8 +355,8 @@
     <Content Include="Admin\Admin.Master" />
     <Content Include="Journeys\Fanzone.aspx" />
     <Content Include="Journeys\GameDay.aspx" />
-    <Content Include="MiniGames\Soccer\kickball web.html" />
-    <Content Include="MiniGames\Soccer\SoccerGame.aspx" />
+    <Content Include="Journeys\Soccer\kickball web.html" />
+    <Content Include="Journeys\Soccer\SoccerGame.aspx" />
     <Content Include="SampleSignalR.html" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -364,7 +364,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\DateTimePicker.js" />
     <Content Include="Events\Web.config" />
-    <Content Include="MiniGames\Soccer\kickball web.unity3d" />
+    <Content Include="Journeys\Soccer\kickball web.unity3d" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -594,11 +594,11 @@
       <DependentUpon>GameDay.aspx</DependentUpon>
     </Compile>
     <Compile Include="Journeys\JourneyHub.cs" />
-    <Compile Include="MiniGames\Soccer\SoccerGame.aspx.cs">
+    <Compile Include="Journeys\Soccer\SoccerGame.aspx.cs">
       <DependentUpon>SoccerGame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MiniGames\Soccer\SoccerGame.aspx.designer.cs">
+    <Compile Include="Journeys\Soccer\SoccerGame.aspx.designer.cs">
       <DependentUpon>SoccerGame.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
@@ -630,6 +630,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Images\" />
     <Folder Include="Journeys\Taunts\" />
+    <Folder Include="MiniGames\" />
     <Folder Include="Scripts\noty\" />
   </ItemGroup>
   <ItemGroup>
