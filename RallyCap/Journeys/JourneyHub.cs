@@ -14,16 +14,22 @@ namespace RallyCap.Journeys
         {
             Clients.All.sendMessage(string.Format("PlayTaunt||{0}", messageType));
         }
-        public void Cheer(string messageType)
+        public void Chant(string messageType)
         {
-            Clients.All.sendMessage(string.Format("PlayerCheer||{0}", messageType));
+
+            Clients.All.sendMessage(string.Format("PlayChant||{0}", messageType));
 
         }
+        public void ResetTimer(string timer)
+        {
+            GameStart = false;
+            CountDownTimer = int.Parse(timer);
+            CountdownToGameTime();
+        }
+        private volatile static bool GameStart = false;
+        private volatile static int CountDownTimer = 300;
 
-        private static bool GameStart = false;
-        private static int CountDownTimer = 300;
-
-        private static bool isCountdownRunning = false;
+        private volatile static bool isCountdownRunning = false;
 
 
         private static System.Threading.Thread CountdownTimer_Thread;
@@ -34,11 +40,15 @@ namespace RallyCap.Journeys
                 
                 Clients.All.sendMessage(string.Format("CountDown||{0}", CountDownTimer));
                 CountDownTimer--;
-                if (CountDownTimer <= 0)
-                {
-                    StartGameNow();
-                }
+
                 System.Threading.Thread.Sleep(1000);
+            }
+            isCountdownRunning = false;
+            CountdownTimer_Thread = null;
+
+            if (CountDownTimer <= 0)
+            {
+                StartGameNow();
             }
         }
         public void CountdownToGameTime()

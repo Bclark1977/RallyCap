@@ -2,14 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-    <div id="PlayTauntPlayer" class="Taunt">
-        Player Taunt
-
+    <div id="FanZone" class="FanZone">
+     
+        <h1>Get Ready!</h1> you and your mates have entered an area with lots of fans cheering for the same team.  Ready for Cheers!
+      <img src="../Content/images/hotspot.jpg" />
     </div>
 
 
-    <div id="PlayTauntTeam" class="Taunt">
-        Taunt the Team
-    </div>
 
 </asp:Content>

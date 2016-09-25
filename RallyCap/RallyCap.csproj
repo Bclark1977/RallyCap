@@ -337,6 +337,9 @@
     <Content Include="Content\images\bc_place.jpg" />
     <Content Include="Content\images\hotspot.jpg" />
     <Content Include="Content\images\Rally_Cap_logo.png" />
+    <Content Include="Content\images\Sanjose.png" />
+    <Content Include="Content\images\SoccerChant1.jpg" />
+    <Content Include="Content\images\SoccerTaunt1.jpg" />
     <Content Include="Content\images\WC_Logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Events\EventAdd.aspx" />

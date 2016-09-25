@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <script type="text/javascript">
-
         $(function () {
             // Initialize the connection to the server
             var journeyHub = $.connection.journeyHub;
@@ -24,17 +23,16 @@
 
                 $('#StartGameNow').click(function () {
 
-                    journeyHub.server.startGameNow();
-                    // When the cutton is clicked, call the method DoLongOperation defined in the Hub
+                    journeyHub.server.startGameNow();           
 
                 });
                 $('#btnResetTimer').click(function () {
 
-                    journeyHub.server.resetTimer(document.getElementById("txtTime").value);
-                    // When the cutton is clicked, call the method DoLongOperation defined in the Hub
-
+                    journeyHub.server.resetTimer(document.getElementById("txtTime").value);    
                 });
-                
+                $('#chantButton').click(function () {
+                    journeyHub.server.chant(document.getElementById("lstChant").value);
+                });
             });
         });
 
@@ -47,6 +45,13 @@
             <option value="Player">Taunt Player</option>
         </select>
         <input type="button" id="tauntButton" value="Send Taunt" />
+    </div>
+        <div style="margin-top: 100px;">
+        <select name="lstChant" id="lstChant">
+            <option value="1">Ohi Ohi Ohi</option>
+            <option value="2">Glory Glory Revolution</option>
+        </select>
+        <input type="button" id="chantButton" value="Send Chant" />
     </div>
 
     <input type="button" id="StartGameNow" value="Start Game Now" />
@@ -66,5 +71,5 @@
 
 
     <br />
-    <input type="text" id="txtTime" value="190" /><button id="btnResetTimer" value="Reset Timer" />
+    <input type="text" id="txtTime" value="190" /><input type="button" id="btnResetTimer" value="Reset Timer" />
 </asp:Content>
