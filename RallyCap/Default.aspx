@@ -11,13 +11,13 @@
 
     <div class="row">
         <div class="col-md-4">
-            <h2>POINT 1</h2>
+            <h2>Attending a Game</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                Attending a gaming event in your area.  Register as an attendee and get notifications of the fan zone and
+                deals related to your game.
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                <a class="btn btn-default" href="/Events/EventManage">Manage &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
