@@ -58,6 +58,7 @@
         <script src="/Scripts/jquery.signalR-2.2.1.js"></script>
         <script src="/signalr/hubs"></script>
       
+
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -71,7 +72,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>ll
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
@@ -101,6 +102,7 @@
                 <p>&copy; <%: DateTime.Now.Year %> - RallyCap</p>
             </footer>
         </div>
+                <script type="text/javascript" src="/Scripts/Notifications.js" />
     </form>
 </body>
 </html>

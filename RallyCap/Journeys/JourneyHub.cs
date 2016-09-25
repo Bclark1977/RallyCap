@@ -13,11 +13,15 @@ namespace RallyCap.Journeys
         public void Taunt(string messageType)
         {
             Clients.All.sendMessage(string.Format("PlayTaunt||{0}", messageType));
-            
+        }
+        public void Cheer(string messageType)
+        {
+            Clients.All.sendMessage(string.Format("PlayerCheer||{0}", messageType));
+
         }
 
         private static bool GameStart = false;
-        private static int CountDownTimer = 50000;
+        private static int CountDownTimer = 300;
 
         private static bool isCountdownRunning = false;
 
