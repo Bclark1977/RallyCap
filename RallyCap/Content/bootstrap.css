@@ -4952,7 +4952,7 @@ a.list-group-item.active > .badge,
   border-radius: 6px;
   padding-top: 20px;
   padding-left: 20px;
-        background-image: url("https://localhost:44338/Content/images/BC_Place.jpg");
+        background-image: url("/Content/images/BC_Place.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
 }
